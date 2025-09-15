@@ -1,0 +1,40 @@
+# -----------------------------------------------------------------
+# Complete Requirements for Monocular and Stereo Depth Evaluation Scripts
+# -----------------------------------------------------------------
+# Install these packages using: pip install -r requirements.txt
+# -----------------------------------------------------------------
+
+# Core numerical and data handling libraries
+numpy~=1.23.5
+pandas~=2.0.3
+
+# Image processing and visualization
+opencv-python~=4.8.0
+scikit-image~=0.21.0
+matplotlib~=3.7.3
+Pillow~=10.1.0
+
+# Deep Learning Framework (PyTorch)
+# IMPORTANT: The lines below are for a CPU-only or a standard CUDA 12.1 installation.
+# For a different CUDA version or for ROCm, please visit the PyTorch website
+# for the correct installation command: https://pytorch.org/get-started/locally/
+torch~=2.1.0
+torchvision~=0.16.0
+torchaudio~=2.1.0
+
+# Hugging Face library for models like DPT and ZoeDepth
+transformers~=4.35.2
+# timm is often a dependency for transformers image models
+timm~=0.9.12
+
+# Utility for progress bars
+tqdm~=4.66.1
+
+# For stereo models (RAFT-Stereo and others)
+# RAFT-Stereo dependencies
+yacs~=0.1.8
+# For loading .pth models from URLs
+gdown~=4.7.1
+
+# For reading and writing YAML config files (if used)
+pyyaml~=6.0.1
